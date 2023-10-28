@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style/page1.css">
+</head>
+<body>
+    <div class="main">
+            <nav>
+                <h3>WORK<span class="white"> HOLIC.</span></h3>
+            </nav>
+            <div class="mat">
+                <div class="side">
+                        <button id="opt"><a href="/logout">LOG OUT</a></button>
+                        <button id="opt"><a href="/about">ABOUT US</a></button>
+                        <!-- <button id="opt"> </button> -->
+                </div>
+         <div class="left">
+             <h1 class=".text-target">Hey {{user.name}}!</h1><br>
+             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsa earum dolore velit enim modi, iste itaque exercitationem a, nihil, tempore labore beatae?</h3><br>
+             <button><a href="/past_forms">PAST FORMS</a></button>
+ 
+         </div>
+         <div class="right">
+             <h1 class=".text-target">Hi {{user.name}}!</h1><br>
+             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsa earum dolore velit enim modi, iste itaque exercitationem a, nihil, tempore labore beatae?</h3><br>
+             <button><a href="/create_job">CREATE FORM</a></button>
+         </div>
+     </div>
+    </div>
+      <!--  Gsap is needed for Basic Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Scroll Trigger is needed for Scroll Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script  type="text/javascript"  src="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.js"></script>
+    <script src="./script1.js"></script>
+</body>
+</html>

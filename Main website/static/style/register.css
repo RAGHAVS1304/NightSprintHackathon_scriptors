@@ -1,5 +1,4 @@
 /* Add your CSS in form_style.css */
-
 body {
     font-family: "gilroy";
     font-weight: 600;
@@ -51,18 +50,6 @@ input[type="password"] {
     transform: translateY(-50%);
     right: 10px;
     cursor: pointer;
-}
-
-.forgot-pass {
-    text-align: right;
-    display: block;
-    margin-top: 10px;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.forgot-pass:hover {
-    text-decoration: underline;
 }
 
 button {

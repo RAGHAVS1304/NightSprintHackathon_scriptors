@@ -19,23 +19,33 @@
             <div class="form login">
                 <div class="form-content">
                     <header>CREATE A NEW JOB</header>
-                    <form action="#">
+                    <form action="/create_job" method="POST">
                         <div class="field input-field">
-                            <input type="job-title" placeholder="Job Title" class="input">
+                            <input type="text" placeholder="Company" class="input" name="company">
                         </div>
 
                         <div class="field input-field">
-                            <input type="desc" placeholder="Job Description" class="input">
-                          
-                        </div>
-                        <div class="field input-field">
-                            <input type="req" placeholder="Job Requirements" class="input">
-                      
+                            <input type="text" placeholder="Job Title" class="input" name="title">
                         </div>
 
+                        <div class="field input-field">
+                            <input type="text" placeholder="Job Description" class="input" name="desc">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="text" placeholder="Job Requirements" class="input" name="req">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="text" placeholder="Location" class="input" name="loc">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="text" placeholder="Salary" class="input" name="salary">
+                        </div>
 
                         <div class="field button-field">
-                            <button>Create Job</button>
+                            <input type="submit" value="Create Job">
                         </div>
                     </form>
 

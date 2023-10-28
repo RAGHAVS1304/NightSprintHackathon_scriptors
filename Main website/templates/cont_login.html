@@ -19,18 +19,18 @@
             <div class="form login">
                 <div class="form-content">
                     <header>Login as Contracter</header>
-                    <form action="#">
+                    <form action="/cont_login" method = "POST">
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
+                            <input type="email" placeholder="Email" class="input" name="email">
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
+                            <input type="password" placeholder="Password" class="password" name="password">
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
 
                         <div class="form-link">
-                            <a href="./work_login.html" class="forgot-pass">Login as Worker</a>
+                            <a href="/work_login" class="forgot-pass">Login as Worker</a>
                         </div>
 
                         <div class="field button-field">
@@ -39,7 +39,7 @@
                     </form>
 
                     <div class="form-link">
-                        <span>Don't have an account? <a href="./cont_register.html" class="link signup-link">Signup</a></span>
+                        <span>Don't have an account? <a href="/cont_register" class="forgot-pass">Signup</a></span>
                     </div>
                 </div>
             </div>

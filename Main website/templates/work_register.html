@@ -8,7 +8,7 @@
         <title> Worker Register </title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../static/style/form_style.css">
+        <link rel="stylesheet" href="../static/style/register.css">
                 
         <!-- Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -23,18 +23,17 @@
             <div class="form signup">
                 <div class="form-content">
                     <header>Signup as Worker</header>
-                    <form action="#">
+                    <form action="/work_register" method="POST">
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
+                            <input type="text" placeholder="Name" class="input" name="name">
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" placeholder="Create password" class="password">
+                            <input type="email" placeholder="Email" class="input" name="email">
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" placeholder="Confirm password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
+                            <input type="password" placeholder="Create password" class="password" name="password">
                         </div>
 
                         <div class="field button-field">
@@ -43,7 +42,7 @@
                     </form>
 
                     <div class="form-link">
-                        <span>Already have an account? <a href="./work_login.html" class="link login-link">Login</a></span>
+                        <span>Already have an account? <a href="/work_login" class="forgot-pass">Login</a></span>
                     </div>
                 </div>
 
