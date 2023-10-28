@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-size: 10px;
+    font-family: "gilroy";
+    color: #fff;
+}
+img{
+    position: absolute;
+    /* z-index: -1; */
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+}
+.main{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
+nav>h3{
+    width: 20rem;
+    white-space: nowrap;
+}
+nav{
+    display: flex;
+    width: 100%;
+    font-size: 3rem;
+    font-family: "gilroy";
+    justify-content: center ;
+    align-items: center;
+    padding: 10px 10px;
+    /* z-index: 1; */
+    font-weight: 600;
+    position: relative;
+}
+button{
+    border-radius: 2rem;
+    font-weight: 900;
+    width: 15rem;
+    height: 4rem;
+    font-family: "gilroy";
+    font-size: 3rem;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    transition: all 1s ease-in-out;
+}
+button:hover{
+    color: black;
+    background-color: #fff;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-family: "gilroy";
+}
+button:hover a{
+    color: black;
+}
+#opt{
+    height: 5rem;
+    width: 6rem;
+    font-size: 1rem;
+}
+.side{
+    /* position: absolute; */
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.front{
+    width: 100%;
+    /* background-color: blue; */
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* z-index: 10; */
+}
+  /* z-index: 1; */
+
+.content{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100%;
+   width: 80%;
+   /* background-color: aqua; */
+}
+.side{
+    width: 10%;
+    height: 100%;
+    /* background-color: bisque; */
+}
+.text{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+}
+.grp>h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.grp>h3{
+    font-size: 2rem;
+}
+@media(max-width:745px){
+    html,body{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        font-size: 6px;
+        font-family: "gilroy";
+        color: #fff;
+    }
+    img{
+        position: absolute;
+        /* z-index: -1; */
+        height: 100%;
+        width: 100%;
+        /* object-fit: cover; */
+    }
+    .main{
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    .img{
+        height: 100%;
+        width: 100%;
+    }
+    nav>h3{
+        width: 20rem;
+        white-space: nowrap;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        font-size: 3rem;
+        font-family: "gilroy";
+        justify-content: center ;
+        align-items: center;
+        padding: 10px 10px;
+        /* z-index: 1; */
+        font-weight: 600;
+        position: relative;
+    }
+    button{
+        border-radius: 2rem;
+        font-weight: 900;
+        width: 15rem;
+        height: 4rem;
+        font-family: "gilroy";
+        font-size: 3rem;
+        border: none;
+        color: #fff;
+        background-color: transparent;
+        transition: all 1s ease-in-out;
+    }
+    button:hover{
+        color: black;
+        background-color: #fff;
+    }
+    #opt{
+        height: 5rem;
+        width: 6rem;
+        font-size: 1rem;
+    }
+    .side{
+        /* position: absolute; */
+        display: flex;
+        margin: 1rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    .front{
+        width: 100%;
+        /* background-color: blue; */
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* z-index: 10; */
+    }
+      /* z-index: 1; */
+    
+    .content{
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        height: 100%;
+       width: 80%;
+       /* background-color: aqua; */
+    }
+    .side{
+        width: 10%;
+        height: 100%;
+        /* background-color: bisque; */
+    }
+    .text{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blueviolet; */
+    }
+    .grp>h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .grp>h3{
+        font-size: 2rem;
+    }
+}
+@media(max-width:659){
+    html{
+        font-size: 6px;
+    }
+}

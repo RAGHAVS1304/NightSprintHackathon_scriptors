@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Submitted Forms</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        th, td {
+            text-align: center;
+        }
+        .table {
+            background-color: #f9f9f9;
+        }
+        .table-hover tbody tr:hover {
+            background-color: #e5e5e5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Past Submitted Forms</h1>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Job Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>State</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for forms in fillform %}
+                    <tr>
+                        <td>{{forms.jobId}}</td>
+                        <td>{{forms.name}}</td>
+                        <td>{{forms.email}}</td>
+                        <td>{{forms.state}}</td>
+                        <td>{{forms.pno}}</td>
+                    </tr>
+                    
+                    {% endfor %}
+                    <!-- Add more rows for additional form submissions -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS if needed (not required for this example) -->
+</body>
+</html>

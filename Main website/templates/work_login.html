@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Coding by CodingLab | www.codinglabweb.com-->
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -19,18 +18,18 @@
             <div class="form login">
                 <div class="form-content">
                     <header>Login as Worker</header>
-                    <form action="#">
+                    <form action="/work_login" method="POST">
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
+                            <input type="email" placeholder="Email" class="input" name="email">
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
+                            <input type="password" placeholder="Password" class="password" name="password">
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
 
                         <div class="form-link">
-                            <a href="./cont_login.html" class="forgot-pass">Login as Contracter</a>
+                            <a href="/cont_login" class="forgot-pass">Login as Contracter</a>
                         </div>
 
                         <div class="field button-field">
@@ -39,7 +38,8 @@
                     </form>
 
                     <div class="form-link">
-                        <span>Don't have an account? <a href="./work_register.html" class="link signup-link">Signup</a></span>
+                        
+                        <span>Don't have an account? <a href="/work_register" class="forgot-pass">Sign Up</a></span>
                     </div>
                 </div>
             </div>
